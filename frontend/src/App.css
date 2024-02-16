@@ -1,0 +1,232 @@
+#app {
+    height: 100vh;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    width: 20%;
+    height: 20%;
+    margin: 1rem auto;
+    padding: 10% 10% 5% 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hedgehog{
+    font-size: 25px;
+    color: #552f1e;
+    font-weight: bolder;
+}
+
+.version{
+    font-size: 15px;
+    color: black;
+}
+
+.date-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.today{
+font-size: 18px;
+font-weight: bold;
+}
+
+.current-date{
+    font-size: 12px;
+    color:gray;
+}
+
+.horizonal-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.backBtnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+
+.right-logo{
+    margin: 20px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.backBtn {
+    margin: 20px 20px 0px 20px;
+    cursor: pointer;
+    color: black;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* CSS */
+.startBtn {
+    cursor: pointer;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+    background-color: #A7968E;
+    width: 200px;
+    height: 40px;
+    transition: all 0.2s ease;
+    box-shadow: rgba(176, 176, 176, 0.35) 0px 5px 15px,
+        rgba(219, 219, 219, 0.5) 5px 10px 15px;
+}
+
+.startBtn:hover {
+    background-color: rgb(134, 124, 124);;
+}
+
+.Todo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list-container{
+    margin: 20px 0px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-input{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #DFE1E5;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.task-input:focus{
+background-color: white;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input-cont{
+    position: relative;
+}
+
+.add-task-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.task-item {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    transition: all 0.2s ease;
+    /* box-shadow: rgba(176, 176, 176, 0.35) 0px 5px 15px,
+        rgba(219, 219, 219, 0.5) 5px 10px 15px; */
+}
+
+.task-item:hover{
+    transform: scale(1.02);
+}
+
+
+.button-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(154, 154, 154, 0.35) 0px 5px 15px,
+        rgba(219, 219, 219, 0.5) 5px 10px 15px;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 20px;
+}
+.item-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+span {
+    margin-top: -2px;
+    max-width: 180px;
+    word-wrap: break-word;
+}
+
+.in-progress{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    border-color: transparent;
+}
+.done{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    /* background-color: #28272C; */
+    background-color: #A7968E;
+    border-color: transparent;
+}
